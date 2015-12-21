@@ -1,5 +1,5 @@
 PODS:
-  - CDBDelegateCollection (0.1.0)
+  - CDBDelegateCollection (0.0.1)
 
 DEPENDENCIES:
   - CDBDelegateCollection (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CDBDelegateCollection: a1ea38ec8787c03356e41a70a612f212c883c43a
+  CDBDelegateCollection: 3d005310ffe134e6a2b60ec7255d89e87485460b
 
 COCOAPODS: 0.38.2

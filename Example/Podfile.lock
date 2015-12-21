@@ -1,0 +1,14 @@
+PODS:
+  - CDBDelegateCollection (0.1.0)
+
+DEPENDENCIES:
+  - CDBDelegateCollection (from `../`)
+
+EXTERNAL SOURCES:
+  CDBDelegateCollection:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CDBDelegateCollection: a1ea38ec8787c03356e41a70a612f212c883c43a
+
+COCOAPODS: 0.38.2

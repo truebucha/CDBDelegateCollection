@@ -6,7 +6,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 
-@version = "0.0.1"
+@version = "1.0.1"
 
 Pod::Spec.new do |s|
   s.name             = "CDBDelegateCollection"
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
+#   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
     Use it to handle collection of weak references to delegates. The collection calls a method on a delegate only if it respondsToSelector: succeeded. The collection accept only delegates that conform to protocol that was passed on initialization. If delegate became nil it will be deallocated instantly and reference to it will be removed on the next collection iteration.
                        DESC
@@ -32,11 +32,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'CDBDelegateCollection' => ['Pod/Assets/*.png']
-  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'UIKit'
 end

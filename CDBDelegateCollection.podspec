@@ -6,7 +6,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 
-@version = "1.0.1"
+@version = "1.1.1"
 
 Pod::Spec.new do |s|
   s.name             = "CDBDelegateCollection"
@@ -22,17 +22,18 @@ Pod::Spec.new do |s|
     Use it to handle collection of weak references to delegates. The collection calls a method on a delegate only if it respondsToSelector: succeeded. The collection accept only delegates that conform to protocol that was passed on initialization. If delegate became nil it will be deallocated instantly and reference to it will be removed on the next collection iteration.
                        DESC
 
-  s.homepage         = "https://github.com/yocaminobien/CDBDelegateCollection"
+  s.homepage         = "https://github.com/truebucha/CDBDelegateCollection"
   s.license          = 'MIT'
-  s.author           = { "estbyright" => "estbyright@gmail.com" }
-  s.source           = { :git => "https://github.com/yocaminobien/CDBDelegateCollection.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "truebucha" => "truebucha@gmail.com" }
+  s.source           = { :git => "https://github.com/truebucha/CDBDelegateCollection.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/truebucha'
 
-  s.platform     = :ios, '7.0'
+  s.ios.deployment_target = '7.0'
+  s.osx.deployment_target = '10.8'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
 
   s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit'
+  s.frameworks = 'Foundation'
 end
